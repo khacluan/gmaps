@@ -9,32 +9,20 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'gmaps'
+gem 'rails-gmaps', '~> 0.1.0'
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install gmaps
-
 ## Usage
-
-# GMPOIT
-
-This is gem for help to point on google map. You can marker your address and search your location
-
-## Installation
-### in your Gemfile
-		gem 'gmpoint', git: 'git@github.com:dangluan/gmpoint.git'
 
 ## Setting Up
 
 	bundle
-	rails g gmpoint:install
-	rails g gmpoint MODEL
+	rails g gmaps:install
+	rails g gmaps MODEL
 	rake db:migrate
 
 ## Usage
@@ -48,9 +36,9 @@ This is gem for help to point on google map. You can marker your address and sea
 ### Require locations.coffee.js into your application.js
 
 ```
-    .....
-    //= require locations
-    .....
+  .....
+  //= require locations
+  .....
 ```
 
 ### Add code below into any where if you want to display the map :
