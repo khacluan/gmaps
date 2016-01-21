@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'gmaps/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "gmaps"
+  spec.name          = "rails-gmaps"
   spec.version       = Gmaps::VERSION
   spec.authors       = ["Luan D."]
   spec.email         = ["luan@lixibox.com"]
@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "https://github.com/khacluan/gmaps"
+    spec.metadata['allowed_push_host'] = "https://rubygems.org"
   else
     raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
