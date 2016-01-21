@@ -15,7 +15,7 @@ module Gmaps::GmapsHelper
     opts = {allow: 'show', searchbox: 'show', width: '800px', height: '400px', latitude: "#{@latitude}", longitude: "#{@longitude}", address: "#{@address}", zoom: 13, style: "border: 1px solid #green;", searchbox_width: '400px'}.merge(opts)
     [
       content_tag(:div, :id => "geopoint_search_box_container", style: " display: #{opts[:searchbox]}") do
-        tag(:input, type: :text, placeholder: 'Search', id: "gmaps_#{model_name}_search_box", style: "width: #{option[:searchbox_width]};")
+        tag(:input, type: :text, placeholder: 'Search', id: "gmaps_#{model_name}_search_box", style: "width: #{opts[:searchbox_width]};")
       end,
       content_tag(:div, '', id: "map_canvas", style: "width: #{opts[:width]}; height: #{opts[:height]}; #{opts[:style]}"),
       content_tag(:div, '', class: "data-location", data: {model: model_name, address:opts[:address], latitude: opts[:latitude] , longitude: opts[:longitude], zoom: opts[:zoom]}),
